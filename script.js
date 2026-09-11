@@ -3,70 +3,73 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-
 const perguntas = [
     {
-        enunciado: "Você nota um desânimo profundo, perda de interesse em atividades que amava e extrema dificuldade de concentração. O isolamento tem se tornado constante. Como decide agir?",
+        enunciado: "Meu nome é Elloise, tenho 17 anos e estou começando a decidir o que quero para o meu futuro. Entre tantas possibilidades, percebo que tenho um carinho especial por crianças e gosto da ideia de poder contribuir para o desenvolvimento delas. Qual decisão tomo?",
         alternativas: [
             {
-                texto: "Tenta ignorar os sentimentos e força a barra para manter a rotina como se nada estivesse acontecendo.",
-                afirmacao: "Ao reprimir seus sentimentos, o peso emocional se acumulou e o esgotamento se tornou inevitável. "
+                texto: "Escolho outro caminho porque acredito que trabalhar com crianças pode ser muito difícil.",
+                afirmacao: "Ao deixar de lado aquilo que realmente despertava seu interesse, você percebeu que escolher uma profissão apenas pelo medo das dificuldades poderia afastá-la dos seus sonhos."
             },
             {
-                texto: "Reconhece o momento vulnerável e busca ajuda profissional com um psicólogo ou psiquiatra.",
-                afirmacao: "Reconhecer sua vulnerabilidade e buscar ajuda profissional permitiu desenvolver ferramentas saudáveis de autocuidado. "
+                texto: "Decido conhecer melhor a área da educação e começo a considerar a Pedagogia como minha futura profissão.",
+                afirmacao: "Ao dar atenção ao que realmente despertava seu interesse, você encontrou na Pedagogia uma possibilidade de transformar seu carinho pelas crianças em uma profissão."
             }
         ]
     },
+
     {
-        enunciado: "Um amigo próximo demonstra comportamentos atípicos, episódios de raiva e isolamento frequente. Você percebe o sofrimento dele. O que faz?",
+        enunciado: "Depois de pensar bastante sobre meu futuro, descubro que quero cursar Pedagogia na UEPG. Sei que para conseguir isso precisarei me dedicar aos estudos. Como começo a me preparar?",
         alternativas: [
             {
-                texto: "Prefere não se envolver, acreditando que ele resolverá a situação sozinho no tempo dele.",
-                afirmacao: "A falta de apoio acabou aprofundando o isolamento do seu amigo, tornando a recuperação mais difícil. "
+                texto: "Continuo deixando os estudos para depois, acreditando que ainda tenho bastante tempo.",
+                afirmacao: "Ao adiar sua preparação, você percebeu que um grande objetivo precisa de planejamento e dedicação desde o início."
             },
             {
-                texto: "Abre um espaço seguro para conversar, oferece escuta empática e sugere o acompanhamento de um profissional.",
-                afirmacao: "Ao oferecer uma escuta sem julgamentos, você ajudou seu amigo a dar o primeiro passo para cuidar da própria mente. "
+                texto: "Organizo meus estudos, procuro conhecer melhor a UEPG e começo a me preparar para conquistar minha vaga.",
+                afirmacao: "Ao transformar seu sonho em um objetivo, você começou a construir, passo a passo, o caminho até a UEPG."
             }
         ]
     },
+
     {
-        enunciado: "Em um relacionamento, você percebe comportamentos de controle, manipulação e o afastamento progressivo de amigos e familiares. Qual o seu posicionamento?",
+        enunciado: "Durante minha preparação, surgem dificuldades. Nem sempre consigo estudar como gostaria e algumas matérias parecem mais complicadas. Começo a pensar se realmente vou conseguir. O que faço?",
         alternativas: [
             {
-                texto: "Permanece na relação por medo do término ou na esperança de que a outra pessoa mude.",
-                afirmacao: "Continuar em um ambiente tóxico comprometeu sua autoestima e exigiu um longo processo de reconstrução pessoal. "
+                texto: "Desisto de tentar porque acredito que talvez eu não seja capaz de entrar na faculdade que quero.",
+                afirmacao: "A insegurança fez você se afastar do seu objetivo e mostrou como é importante acreditar no próprio potencial mesmo diante das dificuldades."
             },
             {
-                texto: "Decide encerrar o relacionamento e busca suporte na sua rede de apoio e em acompanhamento terapêutico.",
-                afirmacao: "Estabelecer limites e romper com a dinâmica abusiva trouxe de volta sua autonomia e liberdade emocional. "
+                texto: "Continuo tentando, procuro melhorar minhas dificuldades e lembro por que comecei a lutar por esse sonho.",
+                afirmacao: "Ao persistir mesmo quando as coisas ficaram difíceis, você descobriu que cada obstáculo superado deixava você mais perto da faculdade dos seus sonhos."
             }
         ]
     },
+
     {
-        enunciado: "Crises de ansiedade e o medo constante de certas situações começam a limitar sua rotina e suas saídas de casa. Como encara isso?",
+        enunciado: "Finalmente chega o momento de iniciar minha graduação em Pedagogia. Durante a faculdade, começo a conhecer diferentes áreas da educação e percebo que me identifico cada vez mais com a Educação Infantil. O que decido fazer?",
         alternativas: [
             {
-                texto: "Tenta lidar com os sintomas por conta própria e evita encarar os gatilhos emocionais.",
-                afirmacao: "Ignorar os sinais da ansiedade fez com que o medo passasse a governar suas escolhas diárias por um longo tempo. "
+                texto: "Não me envolvo muito com as experiências da faculdade e penso apenas em terminar o curso.",
+                afirmacao: "Ao não aproveitar as oportunidades de aprendizado, você percebeu que a faculdade poderia oferecer muito mais do que apenas um diploma."
             },
             {
-                texto: "Busca auxílio especializado para entender as causas da ansiedade e aprender a gerenciar as crises.",
-                afirmacao: "Com o tratamento adequado, você compreendeu seus gatilhos e retomou o controle sobre sua própria trajetória. "
+                texto: "Procuro aproveitar as experiências, aprender sobre o desenvolvimento infantil e entender melhor o trabalho realizado na Educação Infantil.",
+                afirmacao: "Ao se dedicar às experiências da graduação, você confirmou que trabalhar com crianças era realmente o caminho profissional que queria seguir."
             }
         ]
     },
+
     {
-        enunciado: "As pressões diárias de trabalho, estudos e vida pessoal acumulam de forma sufocante. O cansaço físico e mental é extremo. Qual é a sua decisão?",
+        enunciado: "Depois de concluir Pedagogia, surge a oportunidade de realizar outro sonho: trabalhar em um CMEI. Lembro da Elloise de 17 anos, que um dia imaginou como seria seu futuro. Agora preciso decidir que tipo de profissional quero ser.",
         alternativas: [
             {
-                texto: "Mantém a rotina acelerada e ignora o esgotamento para não parecer improdutivo.",
-                afirmacao: "Ignorar o limite do próprio corpo resultou em um colapso emocional, provando que o descanso também é essencial."
+                texto: "Vejo o trabalho apenas como uma obrigação e sigo a rotina sem buscar criar vínculos com as crianças.",
+                afirmacao: "Com o tempo, você percebeu que trabalhar em um CMEI exige mais do que cumprir tarefas: é preciso responsabilidade, paciência, cuidado e dedicação."
             },
             {
-                texto: "Reorganiza prioridades, estabelece limites saudáveis e inclui pausas reais no seu dia a dia.",
-                afirmacao: "Priorizar seu bem-estar e redefinir seus limites transformou sua relação com o tempo e com a produtividade."
+                texto: "Procuro criar um ambiente acolhedor, respeitar cada criança e contribuir para que elas aprendam e se desenvolvam.",
+                afirmacao: "Você realizou o sonho que começou aos 17 anos e descobriu que ser pedagoga significa participar dos primeiros passos de muitas crianças e fazer parte de suas histórias."
             }
         ]
     }
